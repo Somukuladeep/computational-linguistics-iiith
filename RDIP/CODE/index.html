@@ -11,7 +11,7 @@
   body
   {
     max-width:1000px;
-    max-height: 400px;
+    max-height:400px;
     margin:auto;
     background-color: white;
   }
@@ -35,9 +35,9 @@ padding-bottom: 10px
     }
 #fix
 {
-   font-size:12px;
+   font-size:13px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     line-height: 0.3;
+     line-height: 0.1;
      color:#00009C;
      font-weight: bolder;
 }
@@ -93,23 +93,29 @@ button{
  font-size:15px;
   margin: 10px;
 }
-#k4
+ #k4
 {
   width: 280px;
-  height: 32px;
+  height: 30px;
  font-size:15px;
   margin: 10px;
 }
  #k5
 {
-  width: 200px;
+  width: 180px;
   height: 30px;
-  font-size: 15px;
+  font-size: 13px;
   margin : 10px;
 }
-
+ #fix7
+{
+     font-size: 15px;
+     color: black;
+     line-height: 1.6;
+}
 
         </style></head>
+       
         <body><center>
   <p>Forming Sentences-2</p>
   <div class= "tool">
@@ -117,10 +123,11 @@ button{
 <h4 style = "text-align:left">Experiment</h4>
     <center>
       <select onchange="goal2()">
+       <select onchange="final()">
          <option value="none" selected>---Select Language---</option>
       <option  id="eng" >English</option>
    <option value="Hindi" id="hin" >Hindi</option></select><br><br>
-     <p id="fix"></p>
+<p id="fix"></p>
 <p id="fix1" style="color:blue; font-style: italic; font-weight: lighter;"></p>
 <p id = "fix3"></p>
 <p id="fix4"></p>
@@ -131,12 +138,13 @@ button{
 <button id="k3" style="visibility: hidden" onclick="back()">Re-form the sentence</button><br>
 <button id="k4" style="visibility: hidden" onclick="find()" >Check the correctness of this sentence</button>
 <p id="fix6"></p>
-<button id="k5" style="visiblity:hidden"> Get correct Sentence</button>
+<button id="k5" style="visiblity: hidden" onclick="toogle()">Get Correct Sentence</button><br>
+<p id="fix7"></p>
  </center>
 
   </section>
 
-<script src="full.js"></script>
+<script src="rand.js"></script>
 
 </center>
 </body>

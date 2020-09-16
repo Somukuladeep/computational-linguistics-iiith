@@ -34,7 +34,8 @@ a1=a.split(" ");
         document.getElementById("fix4").innerHTML=""
         document.getElementById("fix6").innerHTML=""
         document.getElementById("k3").style.visibility="hidden";
-        document.getElementById('k4').style.visibility="hidden"
+        document.getElementById("k4").style.visibility="hidden";
+        document.getElementById("k5").style.visiblity="hidden";
 
 
 	count=0
@@ -135,7 +136,8 @@ for(i=0;i<a1.length||i<b1.length;i++)
     document.getElementById('fix5').innerHTML=""
     document.getElementById('fix6').innerHTML=""
     document.getElementById('k3').style.visibility="hidden"
-     document.getElementById('k4').style.visibility="hidden"   
+     document.getElementById('k4').style.visibility="hidden" 
+     document.getElementById("k5").style.visiblity="hidden";  
 }
  	}
 }
@@ -169,6 +171,7 @@ if(c==1)
 else
 {
       document.getElementById("fix6").innerHTML="<span style='color:red;font-size:30px'>Wrong answer!!!</span>"
+      document.getElementById("k5").style.visibility="visible";
 
 }
 
@@ -199,10 +202,12 @@ if(p==1)
 else
 {
       document.getElementById("fix6").innerHTML="<span style='color:red;font-size:30px'>Wrong answer!!!</span>"
+      
+      document.getElementById("k5").style.visiblity="visible";
 
 }
 
-
+}
 
 }
 

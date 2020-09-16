@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Virtual Labs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset = utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+  body
+  {
+    max-width:1000px;
+    max-height: 400px;
+    margin:auto;
+    background-color: white;
+  }
+.tool
+{
+    background-color: white;
+    height:900px;
+    font-family: sans-serif;
+    margin:30px;
+    box-shadow: 0px 20px 25px 5px   lightslategray;
+}
+#exp h4
+{
+padding-left:60px;
+padding-top: 44px;
+padding-bottom: 10px
+}
+#exp select
+{
+  font-size:15px;
+    }
+#fix
+{
+   font-size:12px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     line-height: 0.3;
+     color:#00009C;
+     font-weight: bolder;
+}
+#fix1
+{
+	font-size:13px;
+    font-family: "Lucida Sans Unicode" , "Lucida Grande" , "sans-serif";
+    line-height: 0.1;
+    color: #00009C;
+    font-weight: bolder;
+}
+#fix3
+{
+	font-size:13px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     line-height: 0.1;
+     color:#00009C;
+     font-weight: bolder;
+     padding-bottom: 10px;
+}
+#fix4
+{
+   font-size:13px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     line-height: 0.1;
+     color:#00009C;
+     font-weight: bolder;
+     padding-bottom: 10px;
+}
+#fix5
+{
+   font-size:13px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     line-height: 0.1;
+     color:#00009C;
+     font-weight: bolder;
+     padding-bottom: 10px;
+}
+button{
+ width: 75px;
+ height: 30px;
+ margin: 2px;
+}
+#fix5
+{
+  font-size: 30px;
+  color :#484848;
+}
+ #k3
+{
+  width: 180px;
+  height: 30px;
+ font-size:15px;
+  margin: 10px;
+}
+#k4
+{
+  width: 280px;
+  height: 32px;
+ font-size:15px;
+  margin: 10px;
+}
+        </style></head>
+        <body><center>
+  <p>Forming Sentences-2</p>
+  <div class= "tool">
+  <section id = "exp">
+<h4 style = "text-align:left">Experiment</h4>
+    <center>
+      <select onchange="goal2()">
+         <option value="none" selected>---Select Language---</option>
+      <option  id="eng" >English</option>
+   <option value="Hindi" id="hin" >Hindi</option></select><br><br>
+     <p id="fix"></p>
+<p id="fix1" style="color:blue; font-style: italic; font-weight: lighter;"></p>
+<p id = "fix3"></p>
+<p id="fix4"></p>
+<p id="fix4"></p><br>
+<p id="fix5"></p>
+<button id="k3" style="visibility: hidden" onclick="reset()">Re-form the sentence</button><br>
+<button id="k4" style="visibility: hidden" >Check the correctness of this sentence</button>
+<button id="k3" style="visibility: hidden" onclick="back()">Re-form the sentence</button><br>
+<button id="k4" style="visibility: hidden" onclick="find()" >Check the correctness of this sentence</button>
+<p id="fix6"></p>
+ </center>
+
+  </section>
+
+<script src="full.js"></script>
+
+</center>
